@@ -1,2 +1,6 @@
 # CRUD-PHP
-CRUD en el lenguaje de programación PHP, curso Desarrollo Web
+### DATOS PERSONALES
+
+- Marco Vinicio Ordonez Pérez
+- Carné 1290-18-6334
+- Desarrollo Web
