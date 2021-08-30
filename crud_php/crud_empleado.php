@@ -14,7 +14,7 @@
         VALUES ('".$txt_codigo."','".$txt_nombres."','".$txt_apellidos."','".$txt_direccion."','".$txt_telefono."','".$txt_fn."',".$drop_puesto.");";
         if($db_conexion->query($sql)===true){
             $db_conexion ->close();
-            print "<script>window.setTimeout(function() { window.location = '/empresa_2021/index.php' }, 1);</script>";
+            print "<script>window.setTimeout(function() { window.location = '/crud_php/index.php' }, 1);</script>";
         }else{
             echo"Error" . $sql . "<br>".$db_conexion ->close();
 
@@ -35,7 +35,7 @@
         $sql="Update empleados set codigo='".$txt_codigo."',nombres='".$txt_nombres."',apellidos='".$txt_apellidos."',direccion='".$txt_direccion."',telefono='".$txt_telefono."',fecha_nacimiento='".$txt_fn."',id_puesto=".$drop_puesto." 
         where id_empleado = ".$txt_id.";";
         if($db_conexion->query($sql)===true){
-            print "<script>window.setTimeout(function() { window.location = '/empresa_2021/index.php' }, 1);</script>";
+            print "<script>window.setTimeout(function() { window.location = '/crud_php/index.php' }, 1);</script>";
         }else{
             echo"Error" . $sql . "<br>";
 
@@ -48,7 +48,7 @@
         $sql="delete from empleados where id_empleado=".$txt_id;
         if($db_conexion->query($sql)===true){
             $db_conexion ->close();
-             print "<script>window.setTimeout(function() { window.location = '/empresa_2021/index.php' }, 1);</script>";
+             print "<script>window.setTimeout(function() { window.location = '/crud_php/index.php' }, 1);</script>";
         }else{
              echo"Error" . $sql . "<br>".$db_conexion ->close();
         }
