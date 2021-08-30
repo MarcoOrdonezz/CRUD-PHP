@@ -124,12 +124,13 @@
 <script type="text/javascript">
         $(document).ready(function() {
             $('#btn').click(function() {
+	    document.getElementById("btn_agregar").disabled = false;
             document.getElementById("form_empleados").reset();            
             });
         });
     $('#tbl_empleado').on('click','tr td', function(evt){
+	document.getElementById("btn_agregar").disabled = true;	
     $('#modelId').modal("show");
-    document.getElementById("btn_agregar").disabled = true;
     var target,ide,idp,codigo,nombres,apellidos,direccion,telefono,fn;  
     target = $(event.target);
     ide=target.parents().data('id');
